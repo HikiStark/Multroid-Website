@@ -1,0 +1,17 @@
+:root{
+  --backgroundcolordark: #17132c;
+  --textcolorbright: #78d400;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--backgroundcolordark);
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  display: flex;
+  min-height: 150vh;
+  margin: 0;
+}
