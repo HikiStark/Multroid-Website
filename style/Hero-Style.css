@@ -1,0 +1,36 @@
+.Hero{
+    margin-top: 80px;
+    position: absolute;
+    height: 1000px;
+    width: 100%;
+    max-width: 1400px;
+    overflow: hidden;
+    border: 1px solid #fff;
+  }
+  
+  .Hero-Grid-Container{
+    display: grid;
+    gap: 1rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+      'one two'
+      'three two';
+    height: 100%;
+  }
+  
+  .Hero-Item{
+    background-color:darkgray;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid black;
+  }
+  
+  .Item1{grid-area: one;} .Item2{grid-area: two;}
+  
+  .Hero-Button{
+    grid-area: three; 
+    height: 60px; 
+    margin: auto 0 auto 0;
+    text-align: center; 
+    background-color: var(--textcolorbright); 
+  }

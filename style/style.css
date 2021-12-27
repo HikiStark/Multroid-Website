@@ -14,4 +14,20 @@ body {
   display: flex;
   min-height: 150vh;
   margin: 0;
+  padding: 0;
+}
+
+ul{margin: 0;}
+
+h1{
+  font-family: "Cornerstone", Monospace;
+  font-size: 110px;
+}
+#Hero-Heading{
+  color: var(--textcolorbright); 
+}
+
+@font-face {
+  font-family: Cornerstone;
+  src: url(Cornerstone.ttf);
 }
