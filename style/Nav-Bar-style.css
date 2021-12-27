@@ -15,7 +15,7 @@ nav {
   text-align: right;
   backdrop-filter: blur(9.5px);
   -webkit-backdrop-filter: blur(9.5px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.356);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.404);
 }
 
 .logo {
