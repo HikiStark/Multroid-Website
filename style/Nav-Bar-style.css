@@ -72,33 +72,24 @@ ul {
 
 .Hero-Grid-Container{
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+    'one two'
+    'three two';
   height: 100%;
-
 }
 
 .Hero-Item{
-  background-color: aqua;
+  background-color:darkgray;
   text-align: center;
   vertical-align: middle;
   border: 2px solid black;
 }
 
-.Item1{
-  grid-column: 1;
-  grid-row: 1;
-}
+.Item1{grid-area: one;}
 
-.Item2{
-  grid-column: 2;
-  grid-row: 1 / span 2;
-}
+.Item2{grid-area: two;}
 
-.Item3{
-  grid-column: 1;
-  grid-row: 2;
-}
+.Item3{grid-area: three;}
 
 .Picture{
   object-fit: cover;
