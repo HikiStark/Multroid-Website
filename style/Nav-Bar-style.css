@@ -3,11 +3,11 @@
 nav {
   position: sticky;
   top: 0;
-  background: #000000cc;
+  background: var(--Darkblueishblackopaque);
   z-index: 1;
   text-align: right;
-  backdrop-filter: blur(9.5px);
-  -webkit-backdrop-filter: blur(9.5px);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.404);
 }
 

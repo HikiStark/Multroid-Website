@@ -1,14 +1,15 @@
 .Hero {
+  display: flex;
+  width: 100%;
+  justify-content: center;
   margin-top: 80px;
   position: absolute;
-  height: 900px;
-  width: 100%;
-  max-width: 1400px;
+  height: 700px;
   overflow: hidden;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.041);
 }
 
 .Hero-Grid-Container {
+  max-width: 1300px;
   display: grid;
   gap: 4.5rem;
   grid-auto-columns: 1fr;
@@ -93,9 +94,9 @@ img {
   -webkit-backdrop-filter: blur(9.5px);
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
 }
 @media (min-width: 992px) {
 }
 @media (min-width: 768px) {
-}
+} */
