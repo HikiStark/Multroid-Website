@@ -23,6 +23,12 @@ h1{
   font-family: "Cornerstone", Monospace;
   font-size: 110px;
 }
+
+a{
+  color: darkgray;
+  font-size: 25px;
+}
+
 #Hero-Heading{
   color: var(--textcolorbright); 
 }
