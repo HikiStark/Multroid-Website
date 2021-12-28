@@ -1,6 +1,7 @@
 :root{
-  --backgroundcolordark: #17132c;
-  --textcolorbright: #78d400;
+  --Darkblueishblack: #17132c;
+  --Brightneongreen: #78d400;
+  --Smokewhite: #afafaf;
 }
 
 html{
@@ -8,7 +9,7 @@ html{
 }
 
 body {
-  background-color: var(--backgroundcolordark);
+  background-color: var(--Smokewhite);
   font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
   display: flex;
@@ -25,12 +26,12 @@ h1{
 }
 
 a{
-  color: darkgray;
+  color: var(--Darkblueishblack);
   font-size: 25px;
 }
 
 #Hero-Heading{
-  color: var(--textcolorbright); 
+  color: var(--Darkblueishblack); 
 }
 
 @font-face {

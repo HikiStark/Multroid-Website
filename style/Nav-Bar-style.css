@@ -39,6 +39,6 @@ nav {
 }
 
 .menu-area a:hover {
-  background: var(--textcolorbright);
-  color: var(--backgroundcolordark);
+  background: var(--Brightneongreen);
+  color: var(--Darkblueishblack);
 }

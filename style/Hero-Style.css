@@ -1,7 +1,7 @@
 .Hero {
   margin-top: 80px;
   position: absolute;
-  height: 1000px;
+  height: 900px;
   width: 100%;
   max-width: 1400px;
   overflow: hidden;
@@ -12,6 +12,7 @@
   display: grid;
   gap: 4.5rem;
   grid-auto-columns: 1fr;
+  grid-auto-rows: 0.9fr 0.1fr;
   grid-template-areas:
     "one two"
     "three two";
@@ -26,25 +27,46 @@
 .Item1 {
   grid-area: one;
 }
+
 .Hero-Card-div {
   grid-area: two;
 }
 
+.Hero-Buttons-div {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-areas: "button1 button2";
+  gap: 1rem;
+}
+
 .Hero-Button {
-  grid-area: three;
   height: 60px;
+  width: 100%;
+  border-radius: 10px;
   margin: auto 0 auto 0;
   text-align: center;
-  background-color: var(--textcolorbright);
+  background-color: var(--Brightneongreen);
+  font-size: 20px;
+  border: 0;
+}
+
+.find-talent-button {
+  grid-area: button1;
+}
+.find-work-button {
+  grid-area: button2;
+  background-color: var(--Smokewhite);
+  border: 4px solid var(--Brightneongreen);
 }
 
 .card {
   transition: 0.3s;
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 25px;
   position: relative;
   display: block;
+  overflow: hidden;
 }
 
 .card:hover {
@@ -69,4 +91,11 @@ img {
   padding: 2px 16px;
   backdrop-filter: blur(9.5px);
   -webkit-backdrop-filter: blur(9.5px);
+}
+
+@media (min-width: 1200px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 768px) {
 }
