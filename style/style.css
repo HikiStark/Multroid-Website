@@ -1,3 +1,9 @@
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
 :root{
   --Darkblueishblack: #17132c;
   --Darkblueishblackopaque: #17132cc7;
@@ -10,7 +16,7 @@ html{
 }
 
 body {
-  background-color: var(--Smokewhite);
+  background-color: var(--Darkblueishblack);
   font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
   display: flex;
@@ -27,12 +33,12 @@ h1{
 }
 
 a{
-  color: var(--Darkblueishblack);
+  color: var(--Smokewhite);
   font-size: 25px;
 }
 
 #Hero-Heading{
-  color: var(--Darkblueishblack); 
+  color: var(--Brightneongreen); 
 }
 
 @font-face {

@@ -5,7 +5,6 @@
   margin-top: 80px;
   position: absolute;
   height: 700px;
-  overflow: hidden;
 }
 
 .Hero-Grid-Container {
@@ -67,10 +66,56 @@
   border-radius: 25px;
   position: relative;
   display: block;
-  overflow: hidden;
 }
 
-.card:hover {
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 25px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 8s linear infinite;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(2);
+  filter: blur(2000px);
+  background-image: linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  opacity: 1;
+  transition: opacity 1.5s;
+  animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
 }
 
 img {
@@ -79,6 +124,7 @@ img {
   object-fit: cover;
   object-position: 75%;
   border-radius: 5px 5px 0 0;
+  border-radius: 25px;
 }
 
 .container {
@@ -87,11 +133,12 @@ img {
   left: 0;
   right: 0;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.384);
-  color: darkgray;
+  background-color: #00000062;
+  color: #a9a9a9;
   padding: 2px 16px;
   backdrop-filter: blur(9.5px);
   -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 0px 0px 25px 25px;
 }
 
 /* @media (min-width: 1200px) {
