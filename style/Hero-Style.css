@@ -86,7 +86,8 @@
 }
 .find-work-button {
   grid-area: button2;
-  background-color: var(--Smokewhite);
+  color: var(--Brightneongreen);
+  background-color: var(--Darkblueishblack);
   border: 4px solid var(--Brightneongreen);
 }
 
@@ -97,6 +98,7 @@
   border-radius: 25px;
   position: relative;
   display: block;
+  box-shadow: 0 5px 40px 0 #00000086;
 }
 
 img {
