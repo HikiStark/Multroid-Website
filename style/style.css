@@ -20,7 +20,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
   display: flex;
-  min-height: 150vh;
+  min-height: 300vh;
   margin: 0;
   padding: 0;
 }

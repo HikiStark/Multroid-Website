@@ -1,22 +1,57 @@
-.Hero {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 80px;
-  position: absolute;
-  height: 700px;
+@media (min-width: 900px) {
+  .Hero {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 80px;
+    position: absolute;
+  }
+  .Hero-Grid-Container {
+    height: 100%;
+    display: grid;
+    gap: 0.5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-areas:
+      "one"
+      "three"
+      "two";
+  }
+  .Hero-Buttons-div {
+    display: grid;
+    grid-template-areas:
+      "button1"
+      "button2";
+    gap: 1rem;
+  }
 }
 
-.Hero-Grid-Container {
-  max-width: 1300px;
-  display: grid;
-  gap: 4.5rem;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 0.9fr 0.1fr;
-  grid-template-areas:
-    "one two"
-    "three two";
-  height: 100%;
+@media (min-width: 1200px) {
+  .Hero {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 80px;
+    position: absolute;
+    height: 700px;
+  }
+  .Hero-Grid-Container {
+    height: 100%;
+    max-width: 1300px;
+    display: grid;
+    gap: 4.5rem;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 0.9fr 0.1fr;
+    grid-template-areas:
+      "one two"
+      "three two";
+  }
+  .Hero-Buttons-div {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: "button1 button2";
+    gap: 1rem;
+  }
 }
 
 .Hero-Item {
@@ -24,19 +59,15 @@
   vertical-align: middle;
 }
 
-.Item1 {
+.Hero-Heading-and-message {
   grid-area: one;
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 
 .Hero-Card-div {
   grid-area: two;
-}
-
-.Hero-Buttons-div {
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-areas: "button1 button2";
-  gap: 1rem;
 }
 
 .Hero-Button {
@@ -68,56 +99,6 @@
   display: block;
 }
 
-.card::before {
-  content: "";
-  width: 104%;
-  height: 102%;
-  border-radius: 25px;
-  background-image: linear-gradient(
-    var(--rotate),
-    #5ddcff,
-    #3c67e3 43%,
-    #4e00c2
-  );
-  position: absolute;
-  z-index: -1;
-  top: -1%;
-  left: -2%;
-  animation: spin 8s linear infinite;
-}
-
-.card::after {
-  position: absolute;
-  content: "";
-  top: calc(var(--card-height) / 6);
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  transform: scale(2);
-  filter: blur(2000px);
-  background-image: linear-gradient(
-    var(--rotate),
-    #5ddcff,
-    #3c67e3 43%,
-    #4e00c2
-  );
-  opacity: 1;
-  transition: opacity 1.5s;
-  animation: spin 8s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    --rotate: 0deg;
-  }
-  100% {
-    --rotate: 360deg;
-  }
-}
-
 img {
   height: 100%;
   width: auto;
@@ -140,10 +121,3 @@ img {
   -webkit-backdrop-filter: blur(9.5px);
   border-radius: 0px 0px 25px 25px;
 }
-
-/* @media (min-width: 1200px) {
-}
-@media (min-width: 992px) {
-}
-@media (min-width: 768px) {
-} */
