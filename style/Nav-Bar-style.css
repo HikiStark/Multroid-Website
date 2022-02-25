@@ -1,14 +1,16 @@
-.navbar {  width: 100%; }
-
-nav {
+.navbar {
   position: sticky;
+  display: block;
   top: 0;
-  background: var(--Darkblueishblackopaque);
-  z-index: 3;
+  width: 100%;
+  z-index: 1;
   text-align: right;
+  border-bottom: #fff;
+  border-style: solid;
+  border-width: 1px;
   backdrop-filter: blur(12.5px);
   -webkit-backdrop-filter: blur(12.5px);
-  box-shadow: 0 1px 2px 0 #00000067;
+  background: var(--Darkblueishblackopaque);
 }
 
 .logo {
@@ -34,7 +36,7 @@ nav {
   font-size: 14px;
   line-height: 30px;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   text-decoration: none;
 }
 
