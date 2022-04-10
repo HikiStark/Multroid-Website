@@ -1,8 +1,15 @@
 .Description{
+    width: 100%;
     min-height: 1000px;
     background-color: darkgray;
+    position: relative;
 }
 
 .Des-Container{
-    
+    max-width: 1400px;
+}
+
+.Description-image1{
+    position: relative;
+    margin-left: 0;
 }
