@@ -1,0 +1,27 @@
+.Tech-we-Use{
+    justify-content: center;
+}
+.TWU-section{
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+}
+.TWU-Tech-Box{
+    border-width: 6px;
+    border-style: solid;
+    border-color: black;
+    display: block;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+}
+.TWU-grid-for-boxes{
+    height: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.TWU-Box-Text{
+    display: block;
+    margin: auto;
+}

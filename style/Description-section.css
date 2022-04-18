@@ -10,7 +10,7 @@
 .Des-Container{
     position: relative;
     max-width: 1400px;
-    min-height: 1000px;
+    min-height: 1500px;
     z-index: 1;
     margin: auto;
     background-color: rgb(165, 130, 130);
@@ -26,17 +26,47 @@
 
 .Dimage1{
     margin-left: 0;
+    height: 500px;
+    width: 500px;
 }
 .Dimage2{
     top: 200px;
     right: 0px;
 }
 .Dimage3{
-    top: 450px;
-    left: 100px;
+    top: 550px;
+    left: 700px;
+    height: 150px;
+    width: 150px;
 }
 .Dimage4{
-    top: 800px;
-    right: 0px;
+    top: 650px;
+    left: 150px;
 }
-
+.Dimage5{
+    top: 1000px;
+    left: 150px;
+}
+.Dimage6{
+    top: 1100px;
+    right: 0;
+}
+.Dimagearr1{
+    top: 250px;
+    left: 500px;
+    width: 1000px;
+    height: 250px;
+    object-fit:none;
+}
+.Dimage1explan{
+    top: 470px;
+    left: 150px;
+    display: block;
+    position:absolute;
+}
+.Dimage2explan{
+    top: 160px;
+    right: 50px;
+    display: block;
+    position:absolute;
+}

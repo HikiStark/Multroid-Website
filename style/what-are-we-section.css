@@ -1,0 +1,9 @@
+.WhatAreWe{
+    justify-content: center;
+}
+.WAW-container{
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 20px;
+    overflow: hidden;
+}

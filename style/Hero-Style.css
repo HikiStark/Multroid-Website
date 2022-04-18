@@ -10,7 +10,7 @@
   height: 100%;
   max-width: 1400px;
   display: grid;
-  gap: 10px;
+  gap: 90px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -37,9 +37,13 @@
   border: 0;
 }
 
+.Hero-Button:hover{
+  background: var(--Brightneongreen);
+  color: var(--Darkblueishblack);
+}
+
 .card {
   position: relative;
-  /* width: 100%; */
   max-height: 800px; 
   overflow: hidden;
   border-radius: 10px;
