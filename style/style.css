@@ -1,11 +1,11 @@
-:root{
+:root {
   --Darkblueishblack: #17132c;
   --Darkblueishblackopaque: #17132cc7;
   --Brightneongreen: #78d400;
   --Smokewhite: #afafaf;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -18,23 +18,30 @@ body {
   padding: 0;
 }
 
-ul{margin: 0;}
+ul {
+  margin: 0;
+}
 
-h1{
+h1 {
   font-family: "Cornerstone", Monospace;
   font-size: 110px;
 }
 
-a{
+a {
   color: var(--Darkblueishblack);
   font-size: 25px;
 }
 
-#Hero-Heading{
-  color: var(--Darkblueishblack); 
+#Hero-Heading {
+  color: var(--Darkblueishblack);
 }
 
 @font-face {
   font-family: Cornerstone;
   src: url(Cornerstone.ttf);
+}
+
+.Border-dashed {
+  border-width: 1px;
+  border-style: dashed;
 }
