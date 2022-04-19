@@ -13,15 +13,18 @@
     display: block;
     height: 300px;
     width: 300px;
-    justify-content: center;
+    text-align: center;
 }
 .TWU-grid-for-boxes{
-    height: 100%;
+    height: max-content;
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .TWU-Box-Text{
     display: block;
-    margin: auto;
+}
+.TWU-grids{
+    height: max-content;
+    width: max-content;
 }

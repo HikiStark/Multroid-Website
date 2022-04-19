@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     min-height: 1100px;
-    background-color: darkgray;
     justify-content: center;
     overflow: hidden;
 }
@@ -13,7 +12,8 @@
     min-height: 1500px;
     z-index: 1;
     margin: auto;
-    background-color: rgb(165, 130, 130);
+    border-width: 1px;
+    border-style: dashed;
 }
 
 .Description-image{

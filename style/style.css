@@ -10,7 +10,7 @@ html{
 }
 
 body {
-  background-color: var(--Smokewhite);
+  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
   min-height: 300vh;
