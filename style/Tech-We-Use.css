@@ -7,7 +7,15 @@
   margin: auto;
   overflow: hidden;
   min-height: 600px;
-  /* padding-bottom: 90px; */
+  padding-top: 60px;
+}
+
+#TWU-Header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 60px;
+  font-family: "Cornerstone", Monospace;
+  font-weight: 100;
 }
 
 .TWU-grid-for-boxes {
@@ -17,15 +25,31 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.TWU-grids {
+  height: 100%;
+  width: 100%;
+}
+
+.TWU-grids-in{
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  height: 100%;
+}
+
 .TWU-Tech-Box {
   display: table-cell;
-  position: relative;
   height: 300px;
   width: 300px;
-  background: #fff;
   border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.725), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
   vertical-align: middle;
+}
+
+.TWU-Tech-Box:hover{
+  background-color: blue;
 }
 
 .TWU-Box-3 {
@@ -34,16 +58,6 @@
 
 .TWU-Box-Text {
   display: block;
-}
-
-.TWU-grids {
-  height: max-content;
-  width: max-content;
-}
-
-#TWU-Header {
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .TWU-Tech-Box-div{
@@ -55,4 +69,16 @@
 
 .TWU-Tech-Box-div a{
   font-size: 28px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+}
+
+.TWU-Tech-Box-Title-div{
+  margin-top: 15px;
+  padding-left: 5px;
+}
+
+.TWU-Tech-Box-Title{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
 }
