@@ -1,38 +1,58 @@
-.Tech-we-Use{
-    justify-content: center;
+.Tech-we-Use {
+  justify-content: center;
 }
-.TWU-section{
-    max-width: 1400px;
-    margin: auto;
-    overflow: hidden;
+
+.TWU-section {
+  max-width: 1400px;
+  margin: auto;
+  overflow: hidden;
+  min-height: 600px;
+  /* padding-bottom: 90px; */
 }
-.TWU-Tech-Box{
-    border-width: 6px;
-    border-style: solid;
-    border-color: black;
-    display: block;
-    height: 300px;
-    width: 300px;
-    text-align: center;
-    vertical-align: middle;
+
+.TWU-grid-for-boxes {
+  height: max-content;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-.TWU-Box-3{
-    padding-top:0px;
+
+.TWU-Tech-Box {
+  display: table-cell;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.725), 0 1px 2px rgba(0, 0, 0, 0.24);
+  vertical-align: middle;
 }
-.TWU-grid-for-boxes{
-    height: max-content;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
+
+.TWU-Box-3 {
+  padding-top: 0px;
 }
-.TWU-Box-Text{
-    display: block;
+
+.TWU-Box-Text {
+  display: block;
 }
-.TWU-grids{
-    height: max-content;
-    width: max-content;
+
+.TWU-grids {
+  height: max-content;
+  width: max-content;
 }
-#TWU-Header{
-    margin-bottom: 20px;
-    margin-top: 20px;
+
+#TWU-Header {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.TWU-Tech-Box-div{
+  margin-left: auto;
+  margin-right: auto;
+  width: min-content;
+  vertical-align: middle;
+}
+
+.TWU-Tech-Box-div a{
+  font-size: 28px;
 }
