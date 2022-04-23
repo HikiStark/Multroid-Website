@@ -11,9 +11,13 @@
 #TWU-Header {
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-left: 60px;
-  font-family: "Cornerstone", Monospace;
-  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100px;
+  font-weight: 800;
+  word-break: break-word;
+  text-transform: uppercase;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
 }
 
 .TWU-grid-for-boxes {
@@ -28,7 +32,7 @@
   width: 100%;
 }
 
-.TWU-grids-in{
+.TWU-grids-in {
   margin-left: auto;
   margin-right: auto;
   width: max-content;
@@ -46,7 +50,7 @@
   vertical-align: middle;
 }
 
-.TWU-Tech-Box:hover{
+.TWU-Tech-Box:hover {
   background-color: blue;
 }
 
@@ -58,26 +62,26 @@
   display: block;
 }
 
-.TWU-Tech-Box-div{
+.TWU-Tech-Box-div {
   margin-left: auto;
   margin-right: auto;
   width: min-content;
   vertical-align: middle;
 }
 
-.TWU-Tech-Box-div a{
+.TWU-Tech-Box-div a {
   font-size: 28px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 
-.TWU-Tech-Box-Title-div{
+.TWU-Tech-Box-Title-div {
   margin-top: 15px;
   padding-left: 5px;
 }
 
-.TWU-Tech-Box-Title{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.TWU-Tech-Box-Title {
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20px;
 }
