@@ -1,0 +1,30 @@
+.Steps-Content{
+    justify-content: space-between;
+    display: flex;
+    /* -webkit-box-pack: justify; */
+    /* -ms-flex-align: center; */
+    align-items: center;
+}
+
+.get-your-business-online{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 110px;
+    font-weight: 800;
+    word-break: break-word;
+    text-transform: uppercase;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    display: block;
+    letter-spacing: 0;
+}
+
+.steps-step{
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: flex;
+    -webkit-box-align: start;
+    /* -ms-flex-align: start; */
+    align-items: flex-start;
+    margin-bottom: 32px;
+}

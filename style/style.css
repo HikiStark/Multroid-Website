@@ -44,3 +44,10 @@ a {
   border-width: 1px;
   border-style: dashed;
 }
+
+.Section-Container{
+  max-width: 1400px;
+  margin: auto;
+  overflow: hidden;
+  min-height: max-content;
+}
