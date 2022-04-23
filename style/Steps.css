@@ -1,6 +1,6 @@
 .Steps-Section {
-  padding-top: 200px;
-  padding-bottom: 300px;
+  padding-top: 150px;
+  padding-bottom: 200px;
 }
 
 .Steps-Container {
@@ -49,6 +49,10 @@
   border-radius: 4px;
 }
 
+.Steps-step-number-div{
+    min-width: 100px;
+}
+
 .step-number-index {
   font-size: 100px;
   margin-bottom: 0;
@@ -89,9 +93,6 @@
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   margin-top: 10px;
-}
-
-.Steps-step-picture-div {
 }
 
 .Steps-step-picture {
