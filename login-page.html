@@ -7,81 +7,122 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login Page</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/Nav-Bar-style.css">
     <link rel="stylesheet" href="style/Login-Page.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="style/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
-    <div class="d-lg-flex half">
-        <div class="bg order-1 order-md-2" style="background-image: url('images/bg_1.jpg');"></div>
-        <div class="contents order-2 order-md-1">
+    <div class="limiter">
+        <div class="container-login100" style="background-color: grey;">
+            <div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
+                <form class="login100-form validate-form flex-sb flex-w">
+                    <span class="login100-form-title p-b-53">
+                        Sign In With
+                    </span>
 
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-md-7">
-                        <div class="mb-4">
-                            <h3>Sign In</h3>
-                            <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur
-                                adipisicing.</p>
-                        </div>
-                        <form action="#" method="post">
-                            <div class="form-group first">
-                                <label for="username">Username</label>
-                                <input type="text" class="form-control" id="username">
+                    <a href="#" class="btn-face m-b-20">
+                        <i class="fa fa-facebook-official"></i>
+                        Facebook
+                    </a>
 
-                            </div>
-                            <div class="form-group last mb-3">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password">
+                    <a href="#" class="btn-google m-b-20">
+                        <img src="media/icons/icon-google.png" alt="GOOGLE">
+                        Google
+                    </a>
 
-                            </div>
+                    <a href="#" class="btn-google m-b-20">
+                        <img src="media/icons/icon-github-dark.png" alt="GITHUB">
+                        Github
+                    </a>
 
-                            <div class="d-flex mb-5 align-items-center">
-                                <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
-                                    <input type="checkbox" checked="checked" />
-                                    <div class="control__indicator"></div>
-                                </label>
-                                <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
-                            </div>
+                    <a href="#" class="btn-google m-b-20">
+                        <img src="media/icons/metamask-fox.svg" alt="METAMASK">
+                        Wallet
+                    </a>
 
-                            <input type="submit" value="Log In" class="btn btn-block btn-primary">
-
-                            <span class="d-block text-center my-4 text-muted">&mdash; or &mdash;</span>
-
-                            <div class="social-login">
-                                <a href="#" class="facebook btn d-flex justify-content-center align-items-center">
-                                    <span class="icon-facebook mr-3"></span> Login with Facebook
-                                </a>
-                                <a href="#" class="twitter btn d-flex justify-content-center align-items-center">
-                                    <span class="icon-twitter mr-3"></span> Login with Twitter
-                                </a>
-                                <a href="#" class="google btn d-flex justify-content-center align-items-center">
-                                    <span class="icon-google mr-3"></span> Login with Google
-                                </a>
-                            </div>
-                        </form>
+                    <div class="p-t-31 p-b-9">
+                        <span class="txt1">
+                            Username
+                        </span>
                     </div>
-                </div>
+                    <div class="wrap-input100 validate-input" data-validate="Username is required">
+                        <input class="input100" type="text" name="username">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="p-t-13 p-b-9">
+                        <span class="txt1">
+                            Password
+                        </span>
+
+                        <a href="#" class="txt2 bo1 m-l-5">
+                            Forgot?
+                        </a>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+                        <input class="input100" type="password" name="pass">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="container-login100-form-btn m-t-17">
+                        <button class="login100-form-btn">
+                            Sign In
+                        </button>
+                    </div>
+
+                    <div class="w-full text-center p-t-55">
+                        <span class="txt2">
+                            Not a member?
+                        </span>
+
+                        <a href="#" class="txt2 bo1">
+                            Sign up now
+                        </a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 
 
+    <div id="dropDownSelect1"></div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/Login-page.js"></script>
 </body>
