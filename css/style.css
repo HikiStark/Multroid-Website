@@ -1,0 +1,57 @@
+:root {
+  --Darkblueishblack: #17132c;
+  --Darkblueishblackopaque: #17132cc7;
+  --Brightneongreen: #78d400;
+  --Smokewhite: #afafaf;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Cornerstone", Monospace;
+  font-size: 110px;
+}
+
+a {
+  color: black;
+  font-size: 25px;
+}
+
+#Hero-Heading {
+  color: var(--Darkblueishblack);
+}
+
+
+.Border-dashed {
+  border-width: 1px;
+  border-style: dashed;
+}
+
+.Section-Container {
+  max-width: 1400px;
+  margin: auto;
+  min-height: max-content;
+}
+
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: Cornerstone;
+  src: url(Cornerstone.ttf);
+}

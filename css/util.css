@@ -2231,6 +2231,7 @@
 .text-black {color: black;}
 
 .text-hov-white:hover {color: white;}
+.text-hov-black:hover {color: black;}
 
 /* ------------------------------------ */
 .text-up {text-transform: uppercase;}

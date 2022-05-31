@@ -1,0 +1,45 @@
+.navbar {
+  position: sticky;
+  display: block;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  text-align: right;
+  border-bottom: #fff;
+  border-style: solid;
+  border-width: 1px;
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  background: var(--Darkblueishblackopaque);
+}
+
+.logo {
+  width: 25%;
+  float: left;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  text-align: left;
+  padding: 15px 15px;
+  display: inline-block;
+}
+
+.menu-area li {  display: inline-block; }
+
+.menu-area a {
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  padding: 15px 15px;
+  font-size: 14px;
+  line-height: 30px;
+  position: relative;
+  text-decoration: none;
+}
+
+.menu-area a:hover {
+  background: var(--Brightneongreen);
+  color: var(--Darkblueishblack);
+}
