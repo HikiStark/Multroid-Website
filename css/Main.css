@@ -1,17 +1,17 @@
 :root {
   --Darkblueishblack: #17132c;
   --Darkblueishblackopaque: #17132cc7;
-  --Brightneongreen: #78d400;
+  --BrightBlue: #0079e3;
   --Smokewhite: #afafaf;
 }
 
 html {
   scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
   background-color: white;
-  font-family: "Montserrat", sans-serif;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -31,11 +31,6 @@ a {
   font-size: 25px;
 }
 
-#Hero-Heading {
-  color: var(--Darkblueishblack);
-}
-
-
 .Border-dashed {
   border-width: 1px;
   border-style: dashed;
@@ -48,7 +43,9 @@ a {
 }
 
 @font-face {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat;
+  src: url(Montserrat-Regular.ttf);
+  /* font-display: block; */
 }
 
 @font-face {
@@ -58,6 +55,7 @@ a {
 
 /* ---------------------------------------------------- Nav-Bar ---------------------------------------------------- */
 .navbar {
+  background-color: #070617;
   position: sticky;
   display: block;
   top: 0;
@@ -67,9 +65,8 @@ a {
   border-bottom: #fff;
   border-style: solid;
   border-width: 1px;
-  backdrop-filter: blur(12.5px);
-  -webkit-backdrop-filter: blur(12.5px);
-  background: var(--Darkblueishblackopaque);
+  /* backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px); */
 }
 
 .logo {
@@ -99,8 +96,8 @@ a {
 }
 
 .menu-area a:hover {
-  background: var(--Brightneongreen);
-  color: var(--Darkblueishblack);
+  background: var(--BrightBlue);
+  /* color: var(--Darkblueishblack); */
 }
 
 /* ---------------------------------------------------- Footer ---------------------------------------------------- */
@@ -155,7 +152,7 @@ a {
 }
 
 .footer .col ul li:hover {
-  color: #ffffff;
+  color: var(--BrightBlue);
   transition: 0.1s;
   -webkit-transition: 0.1s;
   -moz-transition: 0.1s;
