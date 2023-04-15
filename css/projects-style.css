@@ -1,0 +1,103 @@
+.Projectsp-section {
+  color: var(--MainColor);
+  padding-top: 155px;
+  padding-bottom: 200px;
+}
+
+.Projectsp-Container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Projectsp-Header {
+  margin-bottom: 40px;
+  text-align: center;
+  background-color: var(--MainColor);
+  color: var(--BGBright);
+}
+
+.Projectsp-Card h2 {
+  font-size: 40px;
+}
+
+.Projectsp-Grid1 {
+  display: grid;
+  justify-items: stretch;
+  grid-template: "Area1 Area2";
+  gap: 35px;
+  grid-template-rows: 300px;
+}
+
+.Projectsp-Grid2 {
+  display: grid;
+  justify-items: stretch;
+  grid-template: "Area3 Area4 Area5";
+  gap: 35px;
+  grid-template-rows: 500px;
+  margin-top: 35px;
+}
+
+.Projectsp-Project-Card {
+  color: var(--TextColor);
+  background-color: var(--BGBright);
+  border: 2px solid var(--MainColor);
+  border-radius: 10px;
+  box-shadow: 10px 10px 0px var(--MainColor);
+  transition: all 0.8s ease 0s;
+  overflow: hidden;
+}
+
+.Projectsp-Project-Card:hover {
+  box-shadow: 5px 5px 0px;
+  filter: brightness(85%);
+  transition: all 0.3s ease 0s;
+}
+
+.Projectsp-Card {
+  padding: 25px;
+}
+
+.Projectsp-Card-type {
+  background-color: var(--BGBright);
+  max-width: max-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  border: 2px solid var(--MainColor);
+}
+
+.Projectsp-Card-type:hover {
+  filter: brightness(100%);
+}
+
+.Projectsp-Card-type p {
+  margin: 0;
+}
+
+.item1 {
+  background-color: #76ec4d;
+  grid-area: Area1;
+}
+.item2 {
+  background-color: #76ec4d;
+  grid-area: Area2;
+}
+.item3 {
+  background-color: #ffea00;
+  grid-area: Area3;
+}
+.item4 {
+  background-color: #ffea00;
+  grid-area: Area4;
+}
+.item5 {
+  background-color: #ffea00;
+  grid-area: Area5;
+}
+
+footer svg {
+  fill: var(--White);
+}
