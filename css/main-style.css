@@ -11,6 +11,10 @@
   height: 600px;
 }
 
+.container{
+  margin-bottom: 120px;
+}
+
 @media (min-width: 375px) {
   .Hero-section {
     min-height: 800px;
