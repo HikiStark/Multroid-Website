@@ -11,7 +11,7 @@
   height: 600px;
 }
 
-.container{
+.container {
   margin-bottom: 120px;
 }
 
@@ -29,8 +29,17 @@
     height: 300px;
   }
 }
+
+@media (max-width: 576px) {
+  .Hero-section {
+    padding-top: 30%;
+  }
+}
+
 @media (min-width: 576px) {
-  
+  .Hero-section {
+    padding-top: 20%;
+  }
   .Hero-section-text h1 {
     font-size: 3.8rem;
   }
@@ -80,9 +89,6 @@
   }
 }
 @media (min-width: 990px) {
-  /* .Hero-section {
-    height: 100vh;
-  } */
   .Hero-section-text {
     top: 50%;
     left: 0;
