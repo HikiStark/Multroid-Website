@@ -204,7 +204,6 @@ button:hover {
 }
 
 .btn-md:hover {
-  /* background-color: var(--MainColor); */
   color: var(--MainColor);
   box-shadow: none;
   background-color: var(--ActiveColor);
@@ -227,6 +226,7 @@ header {
 .logo {
   height: 60px;
   cursor: pointer;
+  filter: hue-rotate(-26deg) saturate(200%);
 }
 
 .logo-container {

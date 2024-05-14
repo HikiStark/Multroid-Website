@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 20%;
 }
+
 .Hero-section-text {
   color: var(--TextColor);
   margin-right: auto;
@@ -13,6 +14,67 @@
 
 .container {
   margin-bottom: 120px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.project {
+  min-height: 500px;
+  border-radius: 10px;
+  border: 4px solid var(--MainColor);
+  box-shadow: 10px 10px 0px var(--MainColor);
+  padding: 1.5em;
+  transition: all 0.4s ease 0s;
+}
+
+.project:hover {
+  background-color: var(--MainColor);
+  box-shadow: none;
+}
+.project:hover h3 {
+  color: var(--BGBright);
+}
+.project:hover p {
+  color: var(--BGBright);
+}
+
+.project img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: all 0.4s ease 0s;
+}
+.project:hover img {
+  box-shadow: var(--BGBright) 0px 1px 4px, var(--BGBright) 0px 0px 0px 3px;
+}
+
+.project h3 {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.project p {
+  font-size: 1em;
+}
+
+.project a {
+  display: inline-block;
+  max-width: max-content;
+  padding: 1em;
+  border-radius: 6px;
+  border: 2px solid var(--MainColor);
+  background-color: var(--BGBright);
+  transition: all 0.4s ease 0s;
+}
+.project:hover a {
+  color: var(--BGBright);
+  background-color: var(--MainColor);
+  border-color: var(--BGBright);
 }
 
 @media (min-width: 375px) {
@@ -28,14 +90,45 @@
   .Hero-section-animation img {
     height: 300px;
   }
+  .Calltoaction-section-content {
+    min-width: 275px;
+  }
+  .Mission-section-col1 {
+    min-width: 275px;
+  }
+  .Projects-card {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    -ms-flex-wrap: none;
+    flex-wrap: none;
+  }
+  .Project-card-img-div {
+    height: 400px;
+    width: 100%;
+  }
+  .Project-card-description p {
+    margin: 30px 0px;
+  }
+  .Project-card-description h2 {
+    margin-top: 0px;
+    margin: 30px 0px;
+  }
+  .Project-card .btn-md {
+    margin-top: 15px;
+  }
 }
-
 @media (max-width: 576px) {
   .Hero-section {
     padding-top: 30%;
   }
+  .Mission-section-col1 {
+    min-width: 470px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
-
 @media (min-width: 576px) {
   .Hero-section {
     padding-top: 20%;
@@ -49,6 +142,13 @@
   .Hero-section-animation img {
     height: 450px;
   }
+  .Calltoaction-section-content {
+    min-width: 470px;
+    padding-left: 0px;
+    padding-right: 20px;
+    margin-top: 200px;
+    margin-bottom: 150px;
+  }
 }
 @media (min-width: 768px) {
   .Hero-section-text h1 {
@@ -60,8 +160,24 @@
   .Hero-section-animation img {
     height: 550px;
   }
-}
-@media (max-width: 768px) {
+  .heading-2 {
+    color: var(--TextColor);
+  }
+  .smaller-placeholder {
+    min-width: 500px;
+  }
+  .Mission-section {
+    padding-top: 150px;
+  }
+  .Mission-section-placeholder {
+    margin-left: 150px;
+  }
+  .Mission-section-col1 {
+    min-width: 450px;
+  }
+  .Mission-section-col1 {
+    min-width: 550px;
+  }
 }
 @media (max-width: 990px) {
   .Hero-section {
@@ -103,156 +219,6 @@
     height: 450px;
   }
 }
-@media (min-width: 1200px) {
-  .Hero-section-text h1 {
-    font-size: 4.5rem;
-  }
-  .Hero-section-text p {
-    font-size: 1.4rem;
-  }
-  .Hero-section-animation img {
-    height: 500px;
-  }
-}
-@media (min-width: 1400px) {
-  .Hero-section-text h1 {
-    font-size: 5rem;
-  }
-  .Hero-section-text p {
-    font-size: 1.5rem;
-  }
-  .Hero-section-animation img {
-    height: 600px;
-  }
-}
-@media (min-width: 2560px) {
-  .Hero-section-text h1 {
-    font-size: 6rem;
-  }
-  .Hero-section-text p {
-    font-size: 1.6rem;
-  }
-  .Hero-section-animation img {
-    height: 800px;
-  }
-}
-
-.Calltoaction-section {
-  margin-top: 100px;
-  margin-bottom: 200px;
-}
-
-@media (min-width: 375px) {
-  .Calltoaction-section-content {
-    min-width: 275px;
-  }
-}
-@media (min-width: 576px) {
-  .Calltoaction-section-content {
-    min-width: 470px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (min-width: 768px) {
-  .Calltoaction-section-content {
-    min-width: 550px;
-  }
-}
-
-.heading-2 {
-  color: var(--TextColor);
-}
-
-.smaller-placeholder {
-  min-width: 500px;
-}
-
-.Mission-section {
-  padding-top: 150px;
-}
-
-.Mission-section-placeholder {
-  margin-left: 150px;
-}
-
-.Mission-section-col1 {
-  min-width: 450px;
-}
-
-@media (min-width: 375px) {
-  .Mission-section-col1 {
-    min-width: 275px;
-  }
-}
-@media (min-width: 576px) {
-  .Mission-section-col1 {
-    min-width: 470px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media (min-width: 768px) {
-  .Mission-section-col1 {
-    min-width: 550px;
-  }
-}
-
-.Projects-section {
-  margin: 200px 0px;
-}
-
-.Projects-section-label {
-  margin-bottom: 50px;
-}
-
-.Project-card-img-div {
-  vertical-align: middle;
-  height: 600px;
-  width: 600px;
-}
-
-.Project-card-img {
-  width: 100%;
-  border-radius: 8px;
-  border-color: var(--MainColor);
-  border-style: solid;
-  border-width: 4px;
-  /* box-shadow: 10px 10px 0px var(--MainColor); */
-  transition: all 0.3s ease 0s;
-}
-
-.Project-card-img:hover {
-  border-color: var(--ActiveColor);
-  /* box-shadow: 2px 2px 0px 2px var(--MainColor),
-    -2px -2px 0px 2px var(--MainColor); */
-  cursor: pointer;
-}
-
-@media (min-width: 375px) {
-  .Projects-card {
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    -ms-flex-wrap: none;
-    flex-wrap: none;
-  }
-  .Project-card-img-div {
-    height: 400px;
-    width: 100%;
-  }
-  .Project-card-description p {
-    margin: 30px 0px;
-  }
-  .Project-card-description h2 {
-    margin-top: 0px;
-    margin: 30px 0px;
-  }
-  .Project-card .btn-md {
-    margin-top: 15px;
-  }
-}
 @media (min-width: 992px) {
   .Project-card-description h2 {
     margin-top: 0px;
@@ -270,5 +236,48 @@
   }
   .Project-card-description p {
     margin: 30px 0px;
+  }
+
+  .Projectsp-Grid1 {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .Hero-section-text h1 {
+    font-size: 4.5rem;
+  }
+  .Hero-section-text p {
+    font-size: 1.4rem;
+  }
+  .Hero-section-animation img {
+    height: 500px;
+  }
+}
+@media (min-width: 1400px) {
+  .Hero-section {
+    margin-bottom: 50px;
+  }
+  .Hero-section-text h1 {
+    font-size: 5rem;
+  }
+  .Hero-section-text p {
+    font-size: 1.5rem;
+  }
+  .Hero-section-animation img {
+    height: 600px;
+  }
+}
+@media (min-width: 2560px) {
+  .Hero-section {
+    margin-bottom: 150px;
+  }
+  .Hero-section-text h1 {
+    font-size: 6rem;
+  }
+  .Hero-section-text p {
+    font-size: 1.6rem;
+  }
+  .Hero-section-animation img {
+    height: 800px;
   }
 }
