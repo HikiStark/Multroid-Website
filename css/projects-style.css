@@ -28,15 +28,15 @@
   justify-items: stretch;
   grid-template: "Area1 Area2";
   gap: 35px;
-  grid-template-rows: 300px;
+  grid-template-rows: 550px;
 }
 
 .Projectsp-Grid2 {
   display: grid;
   justify-items: stretch;
-  grid-template: "Area3 Area4 Area5";
+  grid-template: "Area3";
   gap: 35px;
-  grid-template-rows: 500px;
+  grid-template-rows: 300px;
   margin-top: 35px;
 }
 
@@ -75,6 +75,10 @@
 
 .Projectsp-Card-type p {
   margin: 0;
+}
+
+.Contact-me-container {
+  padding-top: 200px;
 }
 
 .item1 {
