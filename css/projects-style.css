@@ -82,25 +82,25 @@
 }
 
 .item1 {
-  background-color: #76ec4d;
+  background-color: var(--BGBright);
   grid-area: Area1;
 }
 .item2 {
-  background-color: #76ec4d;
+  background-color: var(--BGBright);
   grid-area: Area2;
 }
 .item3 {
-  background-color: #ffea00;
+  background-color: var(--BGBright);
   grid-area: Area3;
 }
-.item4 {
+/* .item4 {
   background-color: #ffea00;
   grid-area: Area4;
 }
 .item5 {
   background-color: #ffea00;
   grid-area: Area5;
-}
+} */
 
 footer svg {
   fill: var(--White);
